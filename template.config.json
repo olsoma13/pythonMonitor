@@ -1,0 +1,23 @@
+{
+  "general": {
+    "site": {
+      "url": "Your site to monitor here!",
+      "default_ssh_access": "yourSshUser@aHostname",
+      "user": "NA",
+      "pw": "NA"
+    },
+    "contact_email": "webmaster@wherever.com",
+    "default_remote_cmd": "anything you want! eg: sudo systemctl restart nginx"
+  },
+  "logging": {
+    "__usage_level": "Must use one of the following levels: CRITICAL, ERROR, WARNING, INFO or DEBUG",
+    "level": "DEBUG",
+    "__usage_location": "Use `FILE` for the standard output file(s) or `CONSOLE` for the system console.",
+    "location": "CONSOLE"
+  },
+    "notification": {
+      "enabled": true,
+      "base_url": "https://hook.notify17.net/api/raw/",
+      "API_key": "yourRawKey"
+    }
+}
